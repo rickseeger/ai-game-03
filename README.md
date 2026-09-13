@@ -4,6 +4,9 @@ A tiny, deliberately simple Breakout game that renders clean colour ASCII in
 the terminal. One codebase runs on Linux/macOS (stdlib `curses`) and on
 Windows (via the `windows-curses` fallback).
 
+See [INSTALL.md](INSTALL.md) for detailed, copy-paste install/run
+instructions for both Linux/macOS and Windows.
+
 ## Run it
 
 Linux / macOS:
