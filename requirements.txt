@@ -1,0 +1,2 @@
+# Windows only: supplies the 'curses' module the stdlib ships only on POSIX.
+windows-curses>=2.3 ; platform_system == "Windows"
