@@ -1,0 +1,4 @@
+# Optional test runner for the Breakout suite. The tests themselves are pure
+# stdlib `unittest` and run with no dependencies via:
+#     python3 -m unittest discover -s tests -t . -v
+pytest>=8

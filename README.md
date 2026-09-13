@@ -50,3 +50,20 @@ It survives restarts.
 - `breakout/storage.py` — high-score persistence (injectable file path).
 - `breakout/ui.py` — the `curses` renderer and input loop.
 - `breakout.py` — entry point.
+- `tests/` — the headless test suite (stdlib `unittest`, pytest-compatible).
+
+## Tests
+
+The test suite is pure `unittest` (standard library) and runs headless — no
+terminal needed — so it passes straight from a clean checkout:
+
+    python3 -m unittest discover -s tests -t . -v
+
+pytest works too:
+
+    pip install -r requirements-dev.txt
+    python3 -m pytest -v
+
+It covers the core logic: wall/ceiling/paddle/brick collisions, paddle-hit
+angle response, scoring, life loss, win/lose detection, and high-score
+load/save round-trip.
